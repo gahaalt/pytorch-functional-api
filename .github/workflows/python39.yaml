@@ -34,9 +34,11 @@ jobs:
 #    - name: Lint with mypy
 #      run: |
 #        mypy .
-#    - name: Move the directory
-#      run: |
-#        mv pytorch-functional pytorch_functional
+    - name: Rename the directory so pytest works
+      run: |
+        cd ..
+        mv pytorch-functional pytorch_functional
+        cd pytorch_functional
     - name: Test with pytest
       run: |
         pytest .
