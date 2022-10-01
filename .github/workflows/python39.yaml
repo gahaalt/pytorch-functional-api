@@ -34,11 +34,11 @@ jobs:
 #    - name: Lint with mypy
 #      run: |
 #        mypy .
-    - name: Rename the directory so pytest works
+    - name: Rename the directory so relative imports works
       run: |
         cd ..
         mv pytorch-functional pytorch_functional
-        cd pytorch_functional
+        ln -s pytorch_functional pytorch-functional
     - name: Test with pytest
       run: |
         pytest .
