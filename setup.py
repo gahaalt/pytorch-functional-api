@@ -15,7 +15,7 @@ logging.warning("Please use import pytorch_symbolic in your Python code.")
 
 setup(
     name="pytorch-functional",
-    version="0.7.1.post1",
+    version="0.7.1.post2",
     url="https://github.com/gahaalt/pytorch-functional.git",
     project_urls={
         "Documentation": "https://pytorch-functional.readthedocs.io/",
@@ -24,7 +24,7 @@ setup(
     author_email="sjmikler@gmail.com",
     license="MIT",
     description="Provides functional API for model creation in PyTorch.",
-    packages=[],
+    packages=["pytorch_functional"],
     python_requires=">=3.7",
     classifiers=[
         "License :: OSI Approved :: MIT License",
