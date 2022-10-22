@@ -9,13 +9,9 @@ from setuptools import setup
 this_directory = Path(__file__).parent
 long_description = (this_directory / "README.md").read_text()
 
-logging.warning("Pytorch Functional was renamed to Pytorch Symbolic!")
-logging.warning("New package will be downloaded...")
-logging.warning("Please use import pytorch_symbolic in your Python code.")
-
 setup(
     name="pytorch-functional",
-    version="0.7.1.post2",
+    version="0.7.1.post3",
     url="https://github.com/gahaalt/pytorch-functional.git",
     project_urls={
         "Documentation": "https://pytorch-functional.readthedocs.io/",
