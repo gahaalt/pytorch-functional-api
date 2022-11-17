@@ -11,3 +11,5 @@ devel
 benchmarks/logs
 
 MNIST
+
+docs/.obsidian
