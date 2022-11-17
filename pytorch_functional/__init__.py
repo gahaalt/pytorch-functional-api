@@ -7,3 +7,5 @@ logging.warning("Please import pytorch_symbolic instead!")
 
 from pytorch_symbolic import *
 
+FunctionalModel = SymbolicModel  # for backward compatilibity
+
